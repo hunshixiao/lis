@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+ <div class="wrap">
+   <header>
+       <ul>
+           <li>推荐</li>
+           <li>热点</li>
+           <li>视频</li>
+           <li>版本</li>
+           <li>官宣</li>
+           <li>美食</li>
+       </ul>
+   </header>
+   <section>
+       <div class="swiper-container">
+          <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="images/1.png" alt=""></li>
+          </ul>
+       </div>
+       <dl>
+           <dt>
+               <h4>新闻哥:Dopa竟为厂长鸽直播</h4>
+               <p>掌盟新闻网</p>
+           </dt>
+           <dd><img src="images/2.png" alt=""></dd>
+       </dl>
+         <dl>
+           <dt>
+               <h4>新闻哥:Dopa竟为厂长鸽直播</h4>
+               <p>掌盟新闻网</p>
+           </dt>
+           <dd><img src="images/3.png" alt=""></dd>
+       </dl>
+         <!-- <dl>
+           <dt>
+               <h4>新闻哥:Dopa竟为厂长鸽直播</h4>
+               <p>掌盟新闻网</p>
+           </dt>
+           <dd><img src="images/4.png" alt=""></dd>
+       </dl> -->
+   </section> 
+   <footer>
+       <dl>
+           <dt>
+               <i class="iconfont">&#xe64b;</i>
+           </dt>
+           <dd>资讯</dd>
+       </dl>
+         <dl>
+           <dt>
+               <i class="iconfont">&#xe64b;</i>
+           </dt>
+           <dd>资讯</dd>
+       </dl>
+         <dl>
+           <dt>
+               <i class="iconfont">&#xe64b;</i>
+           </dt>
+           <dd>资讯</dd>
+       </dl>
+         <dl>
+           <dt>
+               <i class="iconfont">&#xe64b;</i>
+           </dt>
+           <dd>资讯</dd>
+       </dl>
+  </footer> 
+</div>   
+</body>
+    <script src="./js/swiper.js"></script>
+<script>
+    var scroll=new Scroll('.swiper-container',{
+             autoplay:true
+    })
+    $(footer).on('click','dl',function(){
+        $(this).addClass(active).siblings().removeClass(active)
+    })
+</script>
+</html>
